@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script src="calc.js"></script>
+  </head>
+  <body>
+    <form name="calculator" style="font-size: 1.5rem">
+      <label for="numbers">Input Series of Number:</label>
+      <input
+        type="text"
+        id="numbers"
+        name="numbers"
+        required
+        style="
+          font-size: 1.5rem;
+          height: 20px;
+          padding: 10px;
+          border-radius: 12.5px;
+          border: 1px solid gray;
+        "
+        oninput="calc()"
+      />
+    </form>
+    <div style="font-size: 1.5rem">
+      <div>
+        <span>Max</span>
+        <span id="max">:</span>
+      </div>
+      <div>
+        <span>Min</span>
+        <span id="min">:</span>
+      </div>
+      <div>
+        <span>Sum</span>
+        <span id="sum">:</span>
+      </div>
+      <div>
+        <span>Average</span>
+        <span id="average">:</span>
+      </div>
+      <div>
+        <span>Reverse Order</span>
+        <span id="reverse">:</span>
+      </div>
+    </div>
+  </body>
+</html>

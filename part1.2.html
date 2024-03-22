@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Convert</title>
+    <script src="convert.js"></script>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center; margin-top: 20px">
+      <form
+        name="convertForm"
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding: 40px;
+          border: 2px solid #066cfa;
+          border-radius: 10px;
+          color: #066cfa;
+        "
+      >
+        <label for="val">Enter weight in kg/lb:</label>
+        <input type="number" id="val" name="val" required />
+        <label for="unit">Select unit:</label>
+        <select id="unit" name="unit" required>
+          <option value="kg">lb to kg</option>
+          <option value="lb">kg to lb</option>
+        </select>
+        <button
+          type="button"
+          onclick="convert()"
+          style="
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #066cfa;
+            color: white;
+            cursor: pointer;
+          "
+        >
+          Convert
+        </button>
+        <span id="result" style="margin-top: 10px; height: 10px"></span>
+      </form>
+    </div>
+  </body>
+</html>
